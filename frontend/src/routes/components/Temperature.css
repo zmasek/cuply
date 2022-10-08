@@ -1,0 +1,48 @@
+#gauge g.arc {
+  fill: steelblue;
+}
+
+#gauge g.pointer {
+  fill: #e85116;
+  stroke: #b64011;
+}
+
+#gauge g.label text {
+  text-anchor: middle;
+  font-size: 14px;
+  font-weight: bold;
+  fill: #666;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.card-width {
+  width: 18rem;
+}
+
+.stop-top {
+    stop-color: rgba(252,173,69,1); 
+}
+
+.stop-middle {
+    stop-color: rgba(253,29,29,1);
+}
+
+.stop-bottom {
+    stop-color: rgba(58,60,180,1);
+}
+
+.filled {
+    fill: url(#mainGradient);
+}
+
+.outlined {
+    fill:   none;
+    stroke: url(#mainGradient);
+    stroke-width: 4;
+}
+#Temperature {
+  height: 160px;
+}

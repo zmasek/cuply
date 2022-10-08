@@ -1,0 +1,9 @@
+*.pyc
+*.sqlite3
+__pycache__/
+.coverage
+venv
+*/media/*
+.env
+profile
+*/fixtures/*

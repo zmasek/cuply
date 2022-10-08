@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+  redis:
+    container_name: redis
+    image: redis:latest
+    ports: 
+      - "6379:6379"
+    volumes:
+      - redis:/data/redis
+  backend:
+    build: ./backend
+    ports:
+      - "8001:8001"
+    restart: always
+    command: daphne -b 0.0.0.0 -p 8001 backend.asgi:application
+    env_file:
+      - .env
+    volumes:
+      - "/home/pi/cuply/backend:/backend"
+    working_dir: "/backend"
+    devices:
+      - /dev/ttyACM0
+    depends_on:
+      - redis
+    entrypoint: "/backend/entrypoint.sh"
+volumes: 
+  redis:

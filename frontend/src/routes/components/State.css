@@ -1,0 +1,19 @@
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.card-width {
+  width: 18rem;
+}
+
+.card-img-custom {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-off {
+  filter: grayscale(100%) blur(5px);
+}

@@ -1,0 +1,42 @@
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+.obfuscator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+}
+.react-autosuggest__suggestion {
+    list-style-type: none;
+}
+.react-autosuggest__suggestions-list {
+    padding-left: 0;
+    margin-top:  .75rem;
+}
+.suggestion-image {
+
+    width: 75px;
+    height: 75px;
+}
+/*.react-autosuggest__suggestion--first {
+
+}*/
+.react-autosuggest__suggestion--highlighted {
+    background-color: #c3e6cb;
+    cursor: pointer;
+}
+.react-autosuggest__suggestion--first {
+    border-top: 1px solid #dee2e6 !important;
+}
+
